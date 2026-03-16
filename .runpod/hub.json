@@ -1,7 +1,7 @@
 {
   "title": "Koboldcpp",
   "description": "An example description",
-  "type": "lb",
+  "type": "LB",
   "category": "language",
   "iconUrl": "https://koboldai.com/img/koboldai-logo.png",
   "config": {
