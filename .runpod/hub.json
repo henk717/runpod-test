@@ -1,7 +1,7 @@
 {
   "title": "Koboldcpp [Test]",
   "description": "Versitile AI server - Language Models - Images - TTS - Music",
-  "type": "LB",
+  "endpointType": "LB",
   "category": "language",
   "iconUrl": "https://koboldai.com/img/koboldai-logo.png",
   "config": {
