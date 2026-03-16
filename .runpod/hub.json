@@ -1,6 +1,6 @@
 {
-  "title": "Koboldcpp",
-  "description": "An example description",
+  "title": "Koboldcpp [Test]",
+  "description": "Versitile AI server - Language Models - Images - TTS - Music",
   "type": "LB",
   "category": "language",
   "iconUrl": "https://koboldai.com/img/koboldai-logo.png",
@@ -15,14 +15,23 @@
         }
       }
     ],
-    "inputs": [
+    "env": [
+      {
+        "key": "PORT",
+        "value": "5001"
+      },
+      {
+        "key": "PORT_HEALTH",
+        "value": "5001"
+      },
       {
         "key": "KCPP_MODEL",
         "input": {
           "name": "Language Model",
           "type": "string",
-          "description": "GGUF Language Model",
-          "default": "https://huggingface.co/KoboldAI/LLaMA2-13B-Tiefighter-GGUF/resolve/main/LLaMA2-13B-Tiefighter.Q4_K_S.gguf"
+          "description": "GGUF Language Model (You only need 00001-of for multiple)",
+          "default": "https://huggingface.co/KoboldAI/LLaMA2-13B-Tiefighter-GGUF/resolve/main/LLaMA2-13B-Tiefighter.Q4_K_S.gguf",
+          "advanced": false
         }
       }
     ]
