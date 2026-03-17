@@ -1,9 +1,16 @@
 """Example handler file."""
 
-import runpod
+import os
+import subprocess
 
-# If your handler runs inference on a model, load the model here.
-# You will want models to be loaded into memory before starting serverless.
+# If PORT_HEALTH is set, run the helper script and exit.
+if "PORT_HEALTH" in os.environ:
+    # Run the script and stop further execution
+    subprocess.run(["/opt/koboldcpp/docker-helper.sh"], check=True)
+    raise SystemExit
+
+# Normal serverless behavior
+import runpod
 
 
 def handler(job):
