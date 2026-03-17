@@ -58,7 +58,7 @@ except:
     def handler():
         # Pretend we did some work
         time.sleep(10)
-        result = {"message": "Hi! Want to use KoboldCpp on serverless? You can! But it must be a load balanced instance, this is the only thing we support.}
+        result = {"message": "Hi! Want to use KoboldCpp on serverless? You can! But it must be a load balanced instance, this is the only thing we support."}
 
         # Send result back to RunPod
         send_result(RUNPOD_JOB_ID, result)
