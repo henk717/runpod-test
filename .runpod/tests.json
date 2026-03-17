@@ -1,6 +1,12 @@
 {
   "tests": [
     {
+      "name": "validation_text_input",
+      "input": {
+        "text": "Hello world",
+        "language": "en"
+      },
+      "timeout": 10000
     }
   ],
   "config": {
