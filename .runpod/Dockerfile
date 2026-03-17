@@ -1,3 +1,3 @@
 FROM koboldai/koboldcpp
-COPY handler.py /bin/handler.py
+COPY .runpod/handler.py /bin/handler.py
 CMD /bin/handler.py
