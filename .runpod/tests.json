@@ -1,9 +1,9 @@
 {
   "tests": [
     {
-      "name": "validation_text_input",
+      "name": "job",
       "input": {
-        "text": "Hello world",
+        "text": "Tester",
         "language": "en"
       },
       "timeout": 10000
