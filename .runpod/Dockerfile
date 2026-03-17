@@ -1,4 +1,5 @@
 FROM koboldai/koboldcpp
 COPY .runpod/handler.py /bin/handler.py
-RUN apt install python3 -y
+RUN apt install python3-pip -y
+RUN pip install runpod
 CMD python3 /bin/handler.py
